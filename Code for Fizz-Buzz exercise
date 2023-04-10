@@ -1,8 +1,12 @@
-String by3Fizz = "Fizz";
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+
+        String by3Fizz = "Fizz";
         String by5Buzz = "Buzz";
         String by3and5FizzAndBuzz = "FizzBuzz";
         for (int number = 1; number < 101; number++) {
-            if (number % 15) {
+            if (number % 5 == 0 && number % 3 == 0) {
                 System.out.println(by3and5FizzAndBuzz);
             } else if (number % 3 == 0){
                 System.out.println(by3Fizz);
@@ -11,3 +15,6 @@ String by3Fizz = "Fizz";
             } else{
                 System.out.println(number);
             }
+        }
+    }
+}
