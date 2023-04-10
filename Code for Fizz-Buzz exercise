@@ -2,7 +2,7 @@ String by3Fizz = "Fizz";
         String by5Buzz = "Buzz";
         String by3and5FizzAndBuzz = "FizzBuzz";
         for (int number = 1; number < 101; number++) {
-            if (number % 5 == 0 && number % 3 == 0) {
+            if (number % 15) {
                 System.out.println(by3and5FizzAndBuzz);
             } else if (number % 3 == 0){
                 System.out.println(by3Fizz);
